@@ -1,3 +1,4 @@
+require 'rspec'
 require './lib/vehicle'
 require './lib/passenger'
 
@@ -41,8 +42,5 @@ RSpec.describe Vehicle do
 
       expect(@vehicle.num_adults).to eq(2)
     end
-  end
-
-  describe 'iteration 3' do
   end
 end
