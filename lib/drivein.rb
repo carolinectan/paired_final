@@ -2,7 +2,7 @@ class Drivein
   attr_reader :name, :vehicles
 
   def initialize(name)
-    @name = name
+    @name     = name
     @vehicles = []
   end
 

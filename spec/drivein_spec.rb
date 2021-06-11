@@ -11,13 +11,12 @@ RSpec.describe Drivein do
       @vehicle1 = Vehicle.new("2001", "Honda", "Civic")
       @vehicle2 = Vehicle.new("2008", "Toyota", "FJ")
       @vehicle3 = Vehicle.new("2018", "Audi", "S5")
-      @charlie = Passenger.new({"name" => "Charlie", "age" => 18})
-      @jude = Passenger.new({"name" => "Jude", "age" => 20})
-      @taylor = Passenger.new({"name" => "Taylor", "age" => 12})
-      @johnny = Passenger.new({"name" => "Johnny", "age" => 38})
-      @kelly = Passenger.new({"name" => "Kelly", "age" => 12})
-      @melissa = Passenger.new({"name" => "Melissa", "age" => 7})
-
+      @charlie  = Passenger.new({ "name" => "Charlie", "age" => 18 })
+      @jude     = Passenger.new({ "name" => "Jude", "age" => 20 })
+      @taylor   = Passenger.new({ "name" => "Taylor", "age" => 12 })
+      @johnny   = Passenger.new({ "name" => "Johnny", "age" => 38 })
+      @kelly    = Passenger.new({ "name" => "Kelly", "age" => 12 })
+      @melissa  = Passenger.new({ "name" => "Melissa", "age" => 7 })
     end
 
     it 'exists' do
@@ -77,7 +76,7 @@ RSpec.describe Drivein do
       @vehicle3.add_passenger(@kelly)
       @vehicle3.add_passenger(@melissa)
 
-      expect(@drivein2.passengers_under_18).to eq([@kelly, @melissa]) ##
+      expect(@drivein2.passengers_under_18).to eq([@kelly, @melissa])
     end
   end
 end
@@ -85,7 +84,7 @@ end
 ## Iteration 3
 # You have been contracted by the Big Movie Corporation to build a software system that can track cars entering drive-in movie lots. Specifically, they would like you to implement the following features:
 #   1. Each drive-in has a name, as well as a way to read that data.
-#   1. A drive-in can list all vehicles that parked there.
-#   1. A drive-in can list all vehicles that have multiple passengers.
-#   1. A drive-in can list all passengers who are under 18.
+#   2. A drive-in can list all vehicles that parked there.
+#   3. A drive-in can list all vehicles that have multiple passengers.
+#   4. A drive-in can list all passengers who are under 18.
 # Build upon your existing code from the first two iterations to implement this functionality.
