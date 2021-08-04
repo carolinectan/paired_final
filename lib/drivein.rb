@@ -20,7 +20,6 @@ class Drivein
     @vehicles.flat_map do |vehicle|
       vehicle.passengers.select do |passenger|
         passenger.adult? == false
-      end
     end
   end
 end
