@@ -62,9 +62,10 @@ pry(main)> vehicle.num_adults
 ## Iteration 3
 You have been contracted by the Big Movie Corporation to build a software system that can track cars entering drive-in movie lots. Specifically, they would like you to implement the following features:
 ```
-#   1. Each drive-in has a name, as well as a way to read that data.
-#   2. A drive-in can list all vehicles that parked there.
-#   3. A drive-in can list all vehicles that have multiple passengers.
-#   4. A drive-in can list all passengers who are under 18.
-# Build upon your existing code from the first two iterations to implement this functionality.
+1. Each drive-in has a name, as well as a way to read that data.
+2. A drive-in can list all vehicles that parked there.
+3. A drive-in can list all vehicles that have multiple passengers.
+4. A drive-in can list all passengers who are under 18.
+
+Build upon your existing code from the first two iterations to implement this functionality.
 ```
